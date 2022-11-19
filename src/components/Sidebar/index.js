@@ -13,7 +13,7 @@ const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
     return (
     <div className="nav-bar">
-    <Link className="logo"to="portfolio/">
+    <Link className="logo"to="/">
       <img src={LogoMe} alt="Logo" />
       <img className="sub-logo" src={LogoSubtitle} alt="Dennis Hickox" />
     </Link>
@@ -21,21 +21,21 @@ const Sidebar = () => {
         <NavLink 
           exact="true"
           activeclassname="active"
-          to="portfolio/"
+          to="/"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#827397" />
         </NavLink>
         <NavLink 
           activeclassname="active"
           className="about-link"
-          to="portfolio/about"
+          to="/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#827397" />
         </NavLink>
         <NavLink
           activeclassname="active"
           className="portfolio-link"
-          to="portfolio/portfolio"
+          to="/portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#827397" />
@@ -43,7 +43,7 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="contact-link"
-          to="portfolio/contact"
+          to="/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#827397" />
