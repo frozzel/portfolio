@@ -1,0 +1,143 @@
+
+.contact-form {
+    width: 100%;
+    margin-top: 10px;
+    h1 {
+      margin-bottom: 10px;
+      animation: fadeInUp 4s 4s;
+      animation-fill-mode: forwards;
+    }
+    
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #827397;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #827397;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+     
+    }::placeholder{
+        color: #E9D5DA;
+    }
+  
+    .flat-button {
+      color: #E9D5DA;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #E9D5DA;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+  
+  .icon {
+      bottom: 20px;
+      padding: 0;
+      text-align: center;
+      margin-right: 40px;
+      padding: 7px 0;
+      font-size: 50px;
+      line-height: 16px;
+      color: whitesmoke;
+      animation: fadeInLeft 2s 2.5s;
+      animation-fill-mode: both;
+
+      &:hover {
+        .anchor-icon {
+          color: #E9D5DA;
+        }
+      }
+  }
+  
+  .info-vid {
+    position: absolute;
+    display: flex;
+    border-radius: 25px;
+    top: 50%;
+    left: 55%;
+    animation: fadeInRight 3.5s;
+    animation-fill-mode: forwards;
+    
+    iframe{
+      border-radius: 13px;
+      border-color: #E9D5DA;
+      box-shadow: 1px 1px 2px #E9D5DA;
+    }
+  
+  }
+  .salesforceImg{
+    position: absolute;
+    width: 500px;
+    top: -120%;
+    opacity: 0.8;
+   
+  }
+  
+  @media screen and (max-width: 900px) {
+    
+    .info-vid {
+      flex-direction: column;
+      position: relative;
+      bottom: 1px;
+      left: 1%;
+      width: 50px;
+      margin: 0;
+      float: none;
+
+    .salesforceImg{
+      display: none;
+      }
+    }
+  }
