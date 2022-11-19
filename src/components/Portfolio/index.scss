@@ -1,24 +1,10 @@
-.page{
-  display: flex;
-  position: initial;
-  height: 100%;
-}
-.container{
-  padding-left: 100px;
-  padding-right: 50px;
-  width: calc(100% - 150px);
-  position: initial;
-  height: 100%;
-  overflow: visible;
-
-}
 .portfolio-page {
     padding-left: 100px;
     padding-right: 50px;
     width: calc(100% - 150px);
     position: initial;
     height: 100%;
-    overflow: visible;
+    overflow: auto;
 
     h1.page-title {
         margin-left: 5%;
